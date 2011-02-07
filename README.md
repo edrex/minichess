@@ -20,17 +20,17 @@ To run the test suite without installing (tested on Python 2.5):
  * Random: chooses a legal move at random
  * Flat: chooses a move with a high static value
  * NegaMax: standard adversary search
-  * iterative deepening until a time limit is hit
-  * overshoots the time limit so has unpredictable timing
+   * iterative deepening until a time limit is hit
+   * overshoots the time limit so has unpredictable timing
  * AlphaBeta: NegaMax optimized to trim search branches which aren't relevant
 
 ## COMPETITION
 
  * The engine will play games with itself or humans via skirmish.py
  * Also plays on the IMCS server:
-  * Game between my AlphaBeta and NegaMax strategies:
+   * Game between my AlphaBeta and NegaMax strategies:
           http://wiki.cs.pdx.edu/minichess/logs/3261
-  * Game between two AlphaBeta instances:
+   * Game between two AlphaBeta instances:
           http://wiki.cs.pdx.edu/minichess/logs/3264
  * I haven't implemented any dynamic time management:
    Both strategies take the next run that overshoots 3.0s,
